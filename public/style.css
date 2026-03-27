@@ -95,7 +95,7 @@ body {
   font-size: 1.5rem;
   font-weight: bold;
   color: #fff;
-  animation: spin 3s linear infinite;
+  animation: spin 8s linear infinite;
   border-radius: 20px;
 }
 

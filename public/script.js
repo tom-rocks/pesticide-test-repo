@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
       box.style.animationDuration = '0.3s';
     });
     box.addEventListener('mouseleave', () => {
-      box.style.animationDuration = '3s';
+      box.style.animationDuration = '8s';
     });
   }
 
