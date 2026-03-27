@@ -1,0 +1,298 @@
+/* === CHAOS ZONE STYLES === */
+/* BUG: Comic Sans everywhere, but that's a feature */
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Comic Sans MS', 'Chalkboard SE', cursive;
+  background: #1a0a2e;
+  color: #e0e0e0;
+  overflow-x: hidden;
+}
+
+/* BUG 1: Header has zero padding - text slams against edges */
+.header {
+  background: linear-gradient(135deg, #ff006e, #8338ec, #3a86ff);
+  padding: 0;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 3rem;
+  color: #ffff00;
+  text-shadow: 3px 3px 0 #ff006e, 6px 6px 0 #000;
+  letter-spacing: 4px;
+}
+
+.header p {
+  font-size: 1.2rem;
+  color: #00ff88;
+}
+
+/* BUG 2: Nav links are white on a nearly-white background */
+.navbar {
+  background: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 15px;
+}
+
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 40px;
+  background: #0d0221;
+}
+
+.hero-text {
+  max-width: 60%;
+}
+
+.hero-text h2 {
+  font-size: 2.5rem;
+  color: #ff006e;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #b8b8b8;
+  margin-bottom: 30px;
+}
+
+/* BUG 3: CTA button has tiny 8px font and barely visible */
+.cta-button {
+  background: #3a86ff;
+  color: #3a86ff;
+  border: none;
+  padding: 4px 8px;
+  font-size: 8px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.spinning-box {
+  width: 150px;
+  height: 150px;
+  background: linear-gradient(45deg, #ff006e, #ffbe0b);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  animation: spin 3s linear infinite;
+  border-radius: 20px;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* About Section */
+.about-section {
+  padding: 60px 40px;
+  background: #2d1b69;
+}
+
+.about-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #ffbe0b;
+  margin-bottom: 40px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* BUG 4: Card has fixed height but overflow hidden cuts off text */
+.card {
+  background: #3c1f8e;
+  border-radius: 12px;
+  padding: 25px;
+  height: 150px;
+  overflow: hidden;
+  border: 2px solid #ff006e;
+}
+
+.card h3 {
+  color: #00f5d4;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.card p {
+  color: #ccc;
+  line-height: 1.5;
+}
+
+/* Gallery */
+.gallery-section {
+  padding: 60px 40px;
+  background: #0d0221;
+}
+
+.gallery-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #f15bb5;
+  margin-bottom: 40px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.gallery-item {
+  height: 200px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+  transition: transform 0.3s;
+}
+
+.gallery-item:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+
+/* Testimonials */
+.testimonials {
+  padding: 60px 40px;
+  background: #1a0a2e;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 2.5rem;
+  color: #00bbf9;
+  margin-bottom: 40px;
+}
+
+.testimonial-scroll {
+  display: flex;
+  gap: 30px;
+  overflow-x: auto;
+  padding-bottom: 20px;
+}
+
+.testimonial {
+  min-width: 350px;
+  background: #2d1b69;
+  padding: 30px;
+  border-radius: 12px;
+  font-style: italic;
+  color: #e0e0e0;
+  border-left: 4px solid #ff006e;
+}
+
+/* Stats */
+/* BUG 5: Stats section has no background contrast - blends into page */
+.stats-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 60px 40px;
+  background: #1a0a2e;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat-number {
+  display: block;
+  font-size: 3rem;
+  color: #1a0a2e;
+  font-weight: bold;
+}
+
+.stat-label {
+  font-size: 1rem;
+  color: #888;
+}
+
+/* Contact */
+.contact-section {
+  padding: 60px 40px;
+  background: #2d1b69;
+}
+
+.contact-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #fee440;
+  margin-bottom: 40px;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 2px solid #8338ec;
+  background: #1a0a2e;
+  color: #fff;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.contact-form textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+/* BUG 6: Submit button text is same color as background */
+.submit-btn {
+  background: #8338ec;
+  color: #8338ec;
+  border: none;
+  padding: 14px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: bold;
+}
+
+/* BUG 7: Footer has negative margin, overlaps content above */
+.footer {
+  background: #000;
+  color: #666;
+  text-align: center;
+  padding: 20px;
+  margin-top: -40px;
+  position: relative;
+  z-index: 10;
+}
+
+/* BUG 8: No responsive styles at all - breaks on mobile */
