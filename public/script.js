@@ -28,11 +28,11 @@ document.addEventListener('DOMContentLoaded', () => {
   if (form) {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
-      alert('Your complaint has been launched into the void. We will never read it.');
+      alert('Your manifesto has been yeeted into the digital abyss. We exist in a post-reading society.');
       form.reset();
     });
   }
 
   console.log('%c CHAOS ZONE ', 'background: #ff006e; color: #fff; font-size: 24px; padding: 10px;');
-  console.log('%c Everything is fine. Nothing is broken. ', 'color: #00ff88; font-size: 14px;');
+  console.log('%c everything is broken and that\'s the vibe ', 'color: #00ff88; font-size: 14px;');
 });
