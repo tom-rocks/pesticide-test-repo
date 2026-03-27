@@ -22,7 +22,10 @@ body {
 
 .header h1 {
   font-size: 3rem;
-  color: #ffff00;
+  background: linear-gradient(45deg, #ff0000, #ff8c00, #ffd700, #32cd32, #00ced1, #0000ff, #8a2be2);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-shadow: 3px 3px 0 #ff006e, 6px 6px 0 #000;
   letter-spacing: 4px;
 }
