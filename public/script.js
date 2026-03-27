@@ -16,10 +16,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const box = document.querySelector('.spinning-box');
   if (box) {
     box.addEventListener('mouseenter', () => {
-      box.style.animationDuration = '0.3s';
+      box.style.animationDuration = '3s';
     });
     box.addEventListener('mouseleave', () => {
-      box.style.animationDuration = '3s';
+      box.style.animationDuration = '12s';
     });
   }
 
