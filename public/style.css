@@ -8,7 +8,7 @@
 
 body {
   font-family: 'Comic Sans MS', 'Chalkboard SE', cursive;
-  background: #1a0a2e;
+  background: #0a1a3e;
   color: #e0e0e0;
   overflow-x: hidden;
 }
@@ -185,7 +185,7 @@ body {
 /* Testimonials */
 .testimonials {
   padding: 60px 40px;
-  background: #1a0a2e;
+  background: #0a1a3e;
   text-align: center;
 }
 
@@ -218,7 +218,7 @@ body {
   display: flex;
   justify-content: space-around;
   padding: 60px 40px;
-  background: #1a0a2e;
+  background: #0a1a3e;
 }
 
 .stat {
@@ -228,7 +228,7 @@ body {
 .stat-number {
   display: block;
   font-size: 3rem;
-  color: #1a0a2e;
+  color: #0a1a3e;
   font-weight: bold;
 }
 
@@ -262,7 +262,7 @@ body {
 .contact-form textarea {
   padding: 12px;
   border: 2px solid #8338ec;
-  background: #1a0a2e;
+  background: #0a1a3e;
   color: #fff;
   border-radius: 8px;
   font-family: inherit;
